@@ -2,7 +2,7 @@ node{
 properties([buildDiscarder(logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '5', daysToKeepStr: '', numToKeepStr: '5')), [$class: 'JobLocalConfiguration', changeReasonComment: ''], pipelineTriggers([pollSCM('* * * * *')])])
 def mavenHome = tool name: 'maven3.9.1'
 echo "the job name is: ${JOB_NAME}"
-echo "the node name name is: ${NODE_NAME}"
+echo "the node name name name is: ${NODE_NAME}"
 echo "the build man number is: ${BUILD_NUMBER}"
 echo "Jenkins home hello path is: ${JENKINS_HOME}"
 
